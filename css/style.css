@@ -24,26 +24,43 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     background-color: #1F2937;
-    
 }
 
 .menu-logo {
-    font-weight: bold;
-    font-size: 1.35rem;
+    height: 80px;
 }
 
 .menu-right-links {
     display: flex;
-    gap:10px;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu-right-links > div {
+    display: flex;
+    align-items: center;
+}
+
+.menu-right-links > div:hover {
+    cursor: default;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+svg {
+    height: 30px;
 }
 
 .intro {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 30vh;
+    height: 40vh;
 }
 
 .intro-info {
@@ -54,6 +71,10 @@ header {
     gap: 2vh;
 }
 
+h1 > img {
+    height: 50px
+}
+
 .intro-info > p {
     color: rgba(255, 255, 255, 0.534);
 }
@@ -61,17 +82,20 @@ header {
 button {
     padding: 14px 6px;
     border: none;
-    background-color: #3882F6;
+    background-color: #F5DC26;
     width: 140px;
     font-size: 1.2rem;
     color: white;
     border-radius: 12px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #D0122F;
+}
+
 .intro-img {
-    background-color: rgb(250, 212, 166);
-    flex: 0 0 450px;
-    height: 100%;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,24 +152,36 @@ button {
 }
 
 .main-quote {
-    background-color: rgb(240, 205, 162);
+    background-color: #D0112E;
     font-style: italic;
-    padding: 8vh 16vw;
+    padding: 8vh 20vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 2vh;
     font-size: 1.4rem;
-    color: rgb(58, 57, 57);
+    color: rgb(255, 255, 255);
     line-height: 1.8rem;
+}
+
+.main-quote div {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-quote .author {
     font-weight: bold;
+
     align-self: flex-end;
+    margin-top: 20px;
+}
+
+.main-quote img {
+    width: 250px;
 }
 
 .main-action {
-    background-color: #3882F6;
+    background-color: #1F2937;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -157,6 +193,11 @@ button {
 
 .main-action > button {
     border: solid 1px white;
+    background-color: #1F2937;
+}
+
+.main-action > button:hover {
+    background-color: #F5DC26;
 }
 
 .footer {
